@@ -70,7 +70,7 @@ The majority of calls come in the morning.
 The average speed of answer by Joe is the highest.
 The call resolution rate of Jim is the highest, even though the average speed of his answers is lower compared to those of Joe, Martha and Dan. The call answered by - him are also higher than the average number of calls answered.
 Becky's speed of answer is the lowest among all, and her rate of calls resolved is higher. She is in the 5th position in the call resolution rate.
-Martha has the highest speed of answered in the sec.
+Martha has the highest speed of answered in the sec
 
                                                                         Customer Retention
 

@@ -1,4 +1,7 @@
 # PWC-PowerBI
+
+                                                                       Call Centre Trends
+                                                                       
 Created a dashboard in Power BI for Claire that reflects all relevant Key Performance Indicators (KPIs) and metrics in the dataset.
 
 This GitHub repository showcases my work on a Power BI dashboard project for a telecom company. The objective was to create a comprehensive visualization tool to help the client gain insights into customer preferences and key performance indicators (KPIs).
@@ -40,5 +43,7 @@ Create a dashboard in Power BI for Claire that reflects all relevant Key Perform
 • Average speed of answer
 
 • Agent’s performance quadrant -> average handle time (talk duration) vs  calls answered
+
+                                                                        Customer Retention
 
 I'm excited about the impact this project will have on our client's operations and their ability to better serve their customers.

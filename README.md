@@ -61,6 +61,10 @@ total calls answered = COUNTX(FILTER('call centre trends','call centre trends'[A
 total calls unanswred =COUNTX(FILTER('call centre trends','call centre trends'[Answered (Y/N)] = "No"), 'call centre trends'[Answered (Y/N)])
 
 
+![Screenshot (47)](https://github.com/Ishansingh438/PWC-PowerBI/assets/105629591/5a797d46-c708-4a6d-9fdb-5293f08be365)
+
+
+
 Insights :
 
 • As shown by Data Visualization, It can be deduced that:
@@ -82,7 +86,5 @@ Insights :
 • Becky's speed of answer is the lowest among all, and her rate of calls resolved is higher. She is in the 5th position in the call resolution rate.
 
 • Martha has the highest speed of answered in the sec
-
-                                                                        Customer Retention
 
 I'm excited about the impact this project will have on our client's operations and their ability to better serve their customers.

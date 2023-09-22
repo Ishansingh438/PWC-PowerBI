@@ -1,6 +1,7 @@
 # PWC-PowerBI
 
-                                                                       Call Centre Trends
+![image](https://github.com/Ishansingh438/PWC-PowerBI/assets/105629591/9ce25454-1d15-4e4c-b798-0066fe4dee22)
+
                                                                        
 Created a dashboard in Power BI for Claire that reflects all relevant Key Performance Indicators (KPIs) and metrics in the dataset.
 

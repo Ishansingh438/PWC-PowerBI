@@ -3,9 +3,16 @@
 ![image](https://github.com/Ishansingh438/PWC-PowerBI/assets/105629591/9ce25454-1d15-4e4c-b798-0066fe4dee22)
 
                                                                        
-Created a dashboard in Power BI for Claire that reflects all relevant Key Performance Indicators (KPIs) and metrics in the dataset.
+Problem Statement :
+In this project Create a dashboard in Power BI for the call center manager that reflects all relevant Key Performance Indicators (KPIs) and metrics in the dataset.
 
-This GitHub repository showcases my work on a Power BI dashboard project for a telecom company. The objective was to create a comprehensive visualization tool to help the client gain insights into customer preferences and key performance indicators (KPIs).
+Possible KPIs include (but not limited to):
+
+Overall customer satisfaction
+Overall calls answered/abandoned
+Calls by time
+Average speed of answer
+Agent’s performance quadrant -> average handle time (talk duration) vs calls answered
 
 🔍 Project Highlights:
 
@@ -27,23 +34,43 @@ This GitHub repository showcases my work on a Power BI dashboard project for a t
 Project Goal :- 
 To help our client gain valuable insights into customer preferences and key performance indicators (KPIs).
 
-Task:-
-It’s omnipresent: telecom marketing. Better price here. Better service there. Best for small businesses here. Best for young urbanites there. But what do customers really want? Our client, a big telecom company needs to know.
-
 Create a dashboard in Power BI for Claire that reflects all relevant Key Performance Indicators (KPIs) and metrics in the dataset.
 
+Data Analysis (DAX):
 
- KPIs included :
+Measures used in all visualization are:
 
-• Overall customer satisfaction
+Average of seed of answerd = AVERAGE('call centre trends'[Speed of answer in seconds])
 
-• Overall calls answered/abandoned
+Average of statisfaction = AVERAGE('call centre trends'[Satisfaction rating])
 
-• Calls by time
+Count satisfation rating = COUNT('call centre trends'[Satisfaction rating])
 
-• Average speed of answer
+Overall Customer Satisfation = DIVIDE([Possitive satisfation rating],[Count satisfation rating],0)
 
-• Agent’s performance quadrant -> average handle time (talk duration) vs  calls answered
+Possitive satisfation rating = CALCULATE(COUNT('call centre trends'[Satisfaction rating]),FILTER('call centre trends','call centre trends'[Satisfaction rating] IN {4,5}))
+
+resolved calls = COUNTX(FILTER('call centre trends','call centre trends'[Resolved] = "Yes"), 'call centre trends'[Resolved])
+
+Unresolved calls = COUNTX(FILTER('call centre trends','call centre trends'[Resolved] = "No"), 'call centre trends'[Resolved])
+
+total calls = CALCULATE('Table'[total calls answered] + 'Table'[total calls unanswred])
+
+total calls answered = COUNTX(FILTER('call centre trends','call centre trends'[Answered (Y/N)] = "Yes"),'call centre trends'[Answered (Y/N)])
+
+total calls unanswred =COUNTX(FILTER('call centre trends','call centre trends'[Answered (Y/N)] = "No"), 'call centre trends'[Answered (Y/N)])
+
+Insights :
+As shown by Data Visualization, It can be deduced that:
+
+Most of the satisfaction ratings from each call are 3 and 4.
+The average satisfaction rating has decreased over the span of three months. January brought the highest satisfaction rating and march the lowest.
+The percentage of issue resolved in January was the highest, with a dip in February. It increased again in march.
+The majority of calls come in the morning.
+The average speed of answer by Joe is the highest.
+The call resolution rate of Jim is the highest, even though the average speed of his answers is lower compared to those of Joe, Martha and Dan. The call answered by - him are also higher than the average number of calls answered.
+Becky's speed of answer is the lowest among all, and her rate of calls resolved is higher. She is in the 5th position in the call resolution rate.
+Martha has the highest speed of answered in the sec.
 
                                                                         Customer Retention
 
